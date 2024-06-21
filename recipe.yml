@@ -22,11 +22,27 @@ stages:
 
   # Put your custom actions behind this comment
 
-  - name: example-packages # Sample module using the built-in Apt module to install packages
+  - name: libvirt-packages
     type: apt
     source:
       packages:
-      - vim
+      - qemu-kvm
+      - libvirt-daemon
+      - bridge-utils
+      - virtinst
+      - libvirt-daemon-system
+      - libguestfs-tools
+      - libosinfo-bin
+      - qemu-system
+      - virt-manager
+
+  - name: lookingglass-packages
+    type: apt
+    source:
+      packages:
+      - libxpresent1
+      - libbinutils
+      - dkms
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
