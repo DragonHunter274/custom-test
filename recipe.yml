@@ -36,13 +36,13 @@ stages:
       - qemu-system
       - virt-manager
 
-#  - name: lookingglass-packages
-#    type: apt
-#    source:
-#      packages:
-#      - libxpresent1
-#      - libbinutils
-#      - dkms
+  - name: lookingglass-packages
+    type: apt
+    source:
+      packages:
+      - libxpresent1
+      - libbinutils
+      - dkms
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
