@@ -51,10 +51,10 @@ stages:
       - dkms
   
   - name: misc-packages
-      type: apt
-      source:
-        packages:
-        - spacenavd
+    type: apt
+    source:
+      packages:
+      - spacenavd
 
 
 
