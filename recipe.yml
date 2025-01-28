@@ -49,6 +49,12 @@ stages:
       - libxpresent1
       - libbinutils
       - dkms
+  
+  - name: misc-packages
+      type: apt
+      source:
+        packages:
+        - spacenavd
 
 
 
