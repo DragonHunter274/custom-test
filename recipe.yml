@@ -72,10 +72,10 @@ stages:
 
   # Put your custom actions before this comment
 
-  - name: set-image-name-abroot
-    type: includes
-    includes:
-      - modules/80-set-image-abroot-config.yml
+      #  - name: set-image-name-abroot
+      #    type: includes
+      # includes:
+      #- modules/80-set-image-abroot-config.yml
 
   - name: cleanup
     type: shell
